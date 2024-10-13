@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddTaskActivity">
+
+    <TextView
+        android:id="@+id/addTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Task"
+        android:textColor="@color/purple"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addTaskHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/baseline_done_24" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addTaskHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/black_border"
+        android:hint="Add the task"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="395dp"
+        android:layout_height="232dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/black_border"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:maxLines="10"
+        android:padding="12dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentEditText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/poppins"
+        android:text="dd/mm/yyyy"
+        android:textColor="@color/purple"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/poppins"
+        android:text="Due Date"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/priorityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="293dp"
+        android:background="@drawable/black_border"
+        android:gravity="top"
+        android:hint="Enter Priority"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
